@@ -1,0 +1,13 @@
+(module 1090:test (layer F.Cu) (tedit 5D770E57)
+  (fp_text reference "" (at 0 0.5) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "" (at 0 -0.5) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_line (start 2.794 -6.604) (end 2.794 -1.016) (layer F.CrtYd) (width 0.15))
+  (fp_line (start 2.794 -1.016) (end -2.794 -1.016) (layer F.CrtYd) (width 0.15))
+  (fp_line (start -2.794 -1.016) (end -2.794 -6.604) (layer F.CrtYd) (width 0.15))
+  (fp_line (start -2.794 -6.604) (end 2.794 -6.604) (layer F.CrtYd) (width 0.15))
+  (pad 1 thru_hole rect (at 0 -3.81) (size 5 5) (drill 3.81) (layers *.Cu *.Mask))
+)
