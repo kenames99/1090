@@ -1,0 +1,60 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# +10v
+#
+DEF +10v +10v 0 40 Y Y 1 F P
+F0 "+10v" 0 200 50 H V C CNN
+F1 "+10v" 0 100 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 0 50 N
+P 5 0 1 0 0 50 -50 100 0 150 50 100 0 50 N
+X ~ ~ 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# +15v_raw
+#
+DEF +15v_raw +15v 0 40 Y Y 1 F P
+F0 "+15v" -100 150 50 H I C CNN
+F1 "+15v_raw" 0 300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 100 0 150 N
+P 3 0 1 0 0 150 -50 200 0 250 N
+P 3 0 1 0 0 250 50 200 0 150 N
+X ~ ~ 0 100 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# +7v_raw
+#
+DEF +7v_raw +7v_raw 0 40 Y Y 1 F P
+F0 "+7v_raw" 0 150 50 H V C CNN
+F1 "+7v_raw" 0 250 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 0 0 0 50 N
+P 5 0 1 0 0 150 -50 100 0 50 50 100 0 150 N
+X ~ ~ 0 0 0 L 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+# -15v_raw
+#
+DEF -15v_raw -15v 0 40 N N 1 F P
+F0 "-15v" 0 0 50 H I C CNN
+F1 "-15v_raw" 0 200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 50 -50 100 0 150 50 100 0 50 N
+X ~ ~ 0 0 0 U 50 50 0 0 w
+ENDDRAW
+ENDDEF
+#
+#End Library

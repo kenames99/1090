@@ -195,7 +195,7 @@ F 3 "~" H 8000 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx_IEEE:74LS645 U6
+L 1090-rescue:74LS645 U6
 U 1 1 5CC95499
 P 7400 10100
 F 0 "U6" H 7600 11050 50  0000 C CNN
@@ -605,7 +605,7 @@ Wire Wire Line
 	3050 9900 3200 9900
 Connection ~ 3200 9900
 $Comp
-L 1090-rescue:PARALLEL_BUS_INTERFACE-1090_parallel_bus_interface-1090-rescue P1
+L 1090-rescue:PARALLEL_BUS_INTERFACE-1090_parallel_bus_interface P1
 U 1 1 5CCE697D
 P 2450 8400
 F 0 "P1" V 5515 8369 50  0000 C CNN
@@ -2293,7 +2293,7 @@ Wire Wire Line
 Wire Wire Line
 	16350 11150 16900 11150
 Wire Wire Line
-	16350 11250 16900 11250
+	16350 11250 16800 11250
 Wire Wire Line
 	16350 11350 16900 11350
 Text Label 16400 10650 0    50   ~ 0
@@ -2795,7 +2795,10 @@ P 2950 1750
 F 0 "S1" H 2950 1985 50  0000 C CNN
 F 1 "SW_SPST" H 2950 1850 50  0000 C CNN
 F 2 "1090:SPDT_Horiz_Rocker_Switch" H 2950 1750 50  0001 C CNN
-F 3 "~" H 2950 1750 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1448/e_rocker.pdf" H 2950 1750 50  0001 C CNN
+F 4 "E101J1AQE2" H 2950 1750 50  0001 C CNN "Part #"
+F 5 "C&K" H 2950 1750 50  0001 C CNN "Manufacturer"
+F 6 "Mouser" H 2950 1750 50  0001 C CNN "Vendor"
 	1    2950 1750
 	1    0    0    -1  
 $EndComp
@@ -3649,11 +3652,7 @@ Wire Wire Line
 Wire Wire Line
 	7750 3350 8400 3350
 Connection ~ 7750 3350
-Wire Wire Line
-	7750 2300 8400 2300
 Connection ~ 7750 2300
-Wire Wire Line
-	7750 1350 8400 1350
 Connection ~ 7750 1350
 $Comp
 L Connector:TestPoint TP1
@@ -3746,7 +3745,7 @@ Connection ~ 9550 3350
 Wire Wire Line
 	9550 3350 9900 3350
 Wire Wire Line
-	9000 2300 9550 2300
+	9000 2300 9200 2300
 Wire Wire Line
 	9550 2350 9550 2300
 Connection ~ 9550 2300
@@ -3771,17 +3770,15 @@ $EndComp
 Wire Wire Line
 	9200 1900 9200 1950
 Connection ~ 9200 1950
-Wire Wire Line
-	9200 1950 7250 1950
 $Comp
 L Connector:TestPoint TP3
 U 1 1 61109848
-P 10550 2250
-F 0 "TP3" H 10500 2450 50  0000 L CNN
-F 1 "TestPoint" H 10608 2279 50  0001 L CNN
-F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 10750 2250 50  0001 C CNN
-F 3 "~" H 10750 2250 50  0001 C CNN
-	1    10550 2250
+P 9200 2300
+F 0 "TP3" H 9150 2500 50  0000 L CNN
+F 1 "TestPoint" H 9258 2329 50  0001 L CNN
+F 2 "Connector_Pin:Pin_D1.0mm_L10.0mm" H 9400 2300 50  0001 C CNN
+F 3 "~" H 9400 2300 50  0001 C CNN
+	1    9200 2300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3942,8 +3939,6 @@ Wire Wire Line
 	10350 2350 10350 2300
 Connection ~ 10350 2300
 Wire Wire Line
-	10350 2300 10550 2300
-Wire Wire Line
 	10700 2350 10700 2300
 Connection ~ 10700 2300
 Wire Wire Line
@@ -4020,11 +4015,6 @@ Wire Wire Line
 Wire Wire Line
 	4750 4450 7850 4450
 Connection ~ 4750 3850
-Wire Wire Line
-	10550 2250 10550 2300
-Connection ~ 10550 2300
-Wire Wire Line
-	10550 2300 10700 2300
 $Comp
 L Device:LED_ALT CR16
 U 1 1 5CF91C74
@@ -4233,7 +4223,7 @@ Wire Wire Line
 Wire Wire Line
 	1700 11000 1350 11000
 $Comp
-L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot-1090-rescue J6
+L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot J6
 U 1 1 5E4D3F8F
 P 21300 6550
 F 0 "J6" H 21000 7065 50  0000 C CNN
@@ -4244,7 +4234,7 @@ F 3 "" H 21300 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot-1090-rescue J5
+L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot J5
 U 1 1 5E4D4486
 P 18550 6550
 F 0 "J5" H 18250 7065 50  0000 C CNN
@@ -4255,7 +4245,7 @@ F 3 "" H 18550 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot-1090-rescue J4
+L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot J4
 U 1 1 5E4D4A57
 P 16150 6550
 F 0 "J4" H 15850 7065 50  0000 C CNN
@@ -4266,7 +4256,7 @@ F 3 "" H 16150 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot-1090-rescue J3
+L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot J3
 U 1 1 5E4D4D28
 P 13650 6550
 F 0 "J3" H 13350 7065 50  0000 C CNN
@@ -4277,7 +4267,7 @@ F 3 "" H 13650 6550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot-1090-rescue J2
+L 1090-rescue:EXPANSION_SLOT-expansion_slot-expansion_slot J2
 U 1 1 5E4D50CD
 P 11200 6550
 F 0 "J2" H 10900 7065 50  0000 C CNN
@@ -4360,6 +4350,94 @@ Wire Wire Line
 	5450 3350 4900 3350
 Wire Wire Line
 	4900 3350 4900 3450
+NoConn ~ 6750 12450
+NoConn ~ 6750 12850
+NoConn ~ 6750 12950
+NoConn ~ 5750 12950
+NoConn ~ 5750 12850
+NoConn ~ 5750 12450
+NoConn ~ 17900 13450
+NoConn ~ 17900 13350
+NoConn ~ 17900 12950
+NoConn ~ 19500 12950
+NoConn ~ 19500 13350
+NoConn ~ 19500 13450
+NoConn ~ 3050 9500
+NoConn ~ 3050 9600
+NoConn ~ 1700 11100
+NoConn ~ 1700 10800
+NoConn ~ 3650 3750
+NoConn ~ 2550 1850
+Connection ~ 9200 2300
+Wire Wire Line
+	9200 2300 9550 2300
+Wire Wire Line
+	10350 2300 10700 2300
+$Comp
+L power:VCC #PWR0141
+U 1 1 628EF6CF
+P 17200 11650
+F 0 "#PWR0141" H 17200 11500 50  0001 C CNN
+F 1 "VCC" H 17217 11823 50  0000 C CNN
+F 2 "" H 17200 11650 50  0001 C CNN
+F 3 "" H 17200 11650 50  0001 C CNN
+	1    17200 11650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17200 11650 17200 11700
+Wire Wire Line
+	17200 11700 16800 11700
+Wire Wire Line
+	16800 11700 16800 11250
+Connection ~ 16800 11250
+Wire Wire Line
+	16800 11250 16900 11250
+Wire Wire Line
+	7750 1350 8400 1350
+Wire Wire Line
+	7250 1950 8100 1950
+Wire Wire Line
+	7750 2300 8400 2300
+$Comp
+L Power_raw:+10v #+10v0101
+U 1 1 62C84876
+P 8100 1900
+F 0 "#+10v0101" H 8178 1962 50  0000 L CNN
+F 1 "+10v" H 8100 2000 50  0001 C CNN
+F 2 "" H 8100 1900 50  0001 C CNN
+F 3 "" H 8100 1900 50  0001 C CNN
+	1    8100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_raw:+15v_raw #+15v0101
+U 1 1 62C862B5
+P 7750 1400
+F 0 "#+15v0101" H 7650 1550 50  0001 C CNN
+F 1 "+15v_raw" H 7828 1562 50  0000 L CNN
+F 2 "" H 7750 1400 50  0001 C CNN
+F 3 "" H 7750 1400 50  0001 C CNN
+	1    7750 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Power_raw:-15v_raw #-15v0101
+U 1 1 62C87CDE
+P 7750 3250
+F 0 "#-15v0101" H 7750 3250 50  0001 C CNN
+F 1 "-15v_raw" H 7828 3317 50  0000 L CNN
+F 2 "" H 7750 3250 50  0001 C CNN
+F 3 "" H 7750 3250 50  0001 C CNN
+	1    7750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1300 7750 1350
+Wire Wire Line
+	7750 3250 7750 3350
+Wire Wire Line
+	8100 1950 8100 1900
 Wire Bus Line
 	9300 5250 9300 12950
 Wire Bus Line
@@ -4372,4 +4450,7 @@ Wire Bus Line
 	19400 5250 19400 11250
 Wire Bus Line
 	22150 5250 22150 11250
+Connection ~ 8100 1950
+Wire Wire Line
+	8100 1950 9200 1950
 $EndSCHEMATC
