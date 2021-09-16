@@ -616,13 +616,6 @@ F 3 "" H 2450 8400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3200 9900 3200 10000
-Wire Wire Line
-	3050 10000 3200 10000
-Connection ~ 3200 10000
-Wire Wire Line
-	3200 10000 3200 10100
-Wire Wire Line
 	3050 10100 3200 10100
 Connection ~ 3200 10100
 Wire Wire Line
@@ -661,8 +654,6 @@ Wire Wire Line
 	3350 12650 3350 9350
 Wire Wire Line
 	3350 9350 3050 9350
-Text Notes 2200 9350 0    50   ~ 0
-/EXTENB
 Wire Wire Line
 	3500 12550 3500 9150
 Wire Wire Line
@@ -4301,25 +4292,25 @@ Text Label 1400 10900 0    50   ~ 0
 Pin39
 Text Label 1400 11000 0    50   ~ 0
 Pin47
-Text Label 10200 11200 0    50   ~ 0
+Text Label 10150 11200 0    50   ~ 0
 Pin47
-Text Label 10200 11350 0    50   ~ 0
+Text Label 10150 11350 0    50   ~ 0
 Pin39
-Text Label 12650 11350 0    50   ~ 0
+Text Label 12600 11350 0    50   ~ 0
 Pin39
-Text Label 15150 11350 0    50   ~ 0
+Text Label 15100 11350 0    50   ~ 0
 Pin39
-Text Label 17550 11350 0    50   ~ 0
+Text Label 17500 11350 0    50   ~ 0
 Pin39
-Text Label 20300 11350 0    50   ~ 0
+Text Label 20250 11350 0    50   ~ 0
 Pin39
-Text Label 12650 11200 0    50   ~ 0
+Text Label 12600 11200 0    50   ~ 0
 Pin47
-Text Label 15150 11200 0    50   ~ 0
+Text Label 15100 11200 0    50   ~ 0
 Pin47
-Text Label 17550 11200 0    50   ~ 0
+Text Label 17500 11200 0    50   ~ 0
 Pin47
-Text Label 20300 11200 0    50   ~ 0
+Text Label 20250 11200 0    50   ~ 0
 Pin47
 Text Label 2650 1750 0    50   ~ 0
 PR1
@@ -4438,19 +4429,28 @@ Wire Wire Line
 	7750 3250 7750 3350
 Wire Wire Line
 	8100 1950 8100 1900
-Wire Bus Line
-	9300 5250 9300 12950
-Wire Bus Line
-	12050 5250 12050 11250
-Wire Bus Line
-	14500 5250 14500 11250
-Wire Bus Line
-	17000 5250 17000 11250
-Wire Bus Line
-	19400 5250 19400 11250
-Wire Bus Line
-	22150 5250 22150 11250
 Connection ~ 8100 1950
 Wire Wire Line
 	8100 1950 9200 1950
+Wire Bus Line
+	22150 5250 22150 11250
+Wire Bus Line
+	19400 5250 19400 11250
+Wire Bus Line
+	17000 5250 17000 11250
+Wire Bus Line
+	14500 5250 14500 11250
+Wire Bus Line
+	12050 5250 12050 11250
+Wire Bus Line
+	9300 5250 9300 12950
+Wire Wire Line
+	3200 10000 3200 10100
+Wire Wire Line
+	3200 9900 3200 10000
+Connection ~ 3200 10000
+Wire Wire Line
+	3050 10000 3200 10000
+Text Notes 2200 9350 0    50   ~ 0
+/EXTENB
 $EndSCHEMATC
